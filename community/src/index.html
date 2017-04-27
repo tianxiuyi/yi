@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="stylesheet" href="../dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+		<nav class="navbar navbar-static-top">
+			<div class="container-fluid">
+				<ul class="nav nav-pills" style="float: right;">
+					<li><a href="#">注册</a></li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">通知</a></li>
+					<li><a href="#">设置</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="navbar-default">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+		   	<a class="navbar-brand" href="#">首页</a>
+		    <ul class="nav navbar-nav">
+		        <li><a href="#">社区团体活动服务 <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">党组织活动服务</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">居民自治活动服务 <span class="caret"></span></a>
+		        </li>
+		    </ul>
+	 	</div>
+	 	<ol class="breadcrumb">
+	 		<li class="active">当前位置：</li>
+		  	<li class="active">首页</li>
+		 	<li class="active">社区养老</li>
+		 	<li class="active">离休退休</li>
+		</ol>
+		<div class="media">
+		    <a class="pull-left" href="#">
+		        <img class="media-object" src="images/b.png"
+		             alt="媒体对象">
+		             <img class="img" src="images/b1.png"/>
+		    </a>
+		    <div class="media-body">
+			    <h4 class="media-heading">社区生日会</h4>
+			    提供社区五保供养申请的办理指南、注意事项、办理机构等相关的服务。
+		    </div>
+		</div>
+		<div class="list">
+			<ul class="nav nav-tabs">
+			  <li ui-sref-active="active" ui-sref="a"><a>活动介绍</a></li>
+			  <li ui-sref-active="active" ui-sref="b"><a>查看活动</a></li>
+			  <li ui-sref-active="active" ui-sref="c"><a>活动总结</a></li>
+			</ul>
+		</div>
+		<div ui-view></div>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-ui-router.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
